@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
-import shap
+# import shap
 
 # reading data
 df = pd.read_csv('clean_data.csv')
@@ -134,15 +134,15 @@ def make_prediction(df):
     pred = model.predict(df)
 
     # check feature importance
-    explainer = shap.TreeExplainer(model)
+    # explainer = shap.TreeExplainer(model)
 
-    shap_values = explainer.shap_values(df)
-    shap.initjs()
-    fig2 = shap.force_plot(explainer.expected_value[0], shap_values[0],
-                           df, feature_names=df.columns)
-    shap_html = f"<head>{shap.getjs()}</head><body>{fig2.html()}</body>"
-    st.write('Explanation')
-    st.components.v1.html(shap_html)
+    # shap_values = explainer.shap_values(df)
+    # shap.initjs()
+    # fig2 = shap.force_plot(explainer.expected_value[0], shap_values[0],
+    #                        df, feature_names=df.columns)
+    # shap_html = f"<head>{shap.getjs()}</head><body>{fig2.html()}</body>"
+    # st.write('Explanation')
+    # st.components.v1.html(shap_html)
 
     return np.round(pred[0])
 
