@@ -1,5 +1,4 @@
 # importing libraries
-from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 import streamlit as st
 import pandas as pd
