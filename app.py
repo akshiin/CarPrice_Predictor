@@ -1,11 +1,8 @@
 # importing libraries
-from sklearn.ensemble import RandomForestRegressor
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import pickle
-# import shap
 
 # reading data
 df = pd.read_csv('clean_data.csv')
