@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import warnings
+import sklearn
 
 warnings.filterwarnings('ignore')
 
@@ -144,7 +145,7 @@ def make_prediction(df):
     # st.write('Explanation')
     # st.components.v1.html(shap_html)
 
-    return np.round(pred[0])
+    return int(np.round(pred[0]))
 
 
 st.subheader(f"Your car estimated price is {make_prediction(data)} $")
