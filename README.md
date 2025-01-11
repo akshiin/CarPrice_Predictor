@@ -1,6 +1,6 @@
 # CarPrice_Predictor
 
-## [https://ayygee18-carprice-predictor-app-eldffa.streamlit.app/](https://car-price-predictorr.streamlit.app)
+## [Go to website](https://car-price-predictorr.streamlit.app)
 
 The application is intended for those who want to sell their car based on its technical characteristics. The owner can enter the following characteristics:
 - brand
