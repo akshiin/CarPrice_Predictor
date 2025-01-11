@@ -3,6 +3,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import warnings
+
+warnings.filterwarnings('ignore')
 
 # reading data
 df = pd.read_csv('clean_data.csv')
